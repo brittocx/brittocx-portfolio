@@ -9,23 +9,28 @@
   color: white;
   font-family: "Nunito", sans-serif;
 }
+
 body {
   line-height: 1.7;
   background-color: black;
   min-height: 200vh;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 ::selection {
   color: white;
   background-color: crimson;
 }
+
 /* <================= Scroll Bar =================> */
 ::-webkit-scrollbar {
   width: 10px;
   background-color: black;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: #bfbfbf;
   border-radius: 10px;
@@ -134,7 +139,7 @@ span {
 
 /* <================= Navbar =================> */
 #navbar {
-  height: 7rem;
+  height: 5rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -143,21 +148,19 @@ span {
   top: 0;
   left: 0;
   z-index: 999;
+  transition: all 0.5s ease-in-out;
 }
 #navbar.fixed {
   position: fixed;
-  height: 5rem;
   background-color: #131416;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 #navbar .logo {
   width: 5rem;
   margin-left: 5rem;
   z-index: 5;
 }
-#navbar .logo img {
-  width: 12rem;
-}
+
 #navbar .nav-items {
   display: flex;
   list-style: none;
@@ -169,14 +172,14 @@ span {
 #navbar .nav-items li a {
   text-decoration: none;
   color: #c1c1c1;
-  font-size: 17px;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 #navbar .nav-items li a:hover {
   color: white;
   content: "";
   border-bottom: 2px solid #ff2626;
-  margin-top: 5px;
+  margin-top: 0.312rem;
   transition: transform 0.3s ease;
 }
 
@@ -196,15 +199,27 @@ span {
 #home .text-holder h1 {
   font-weight: 300;
 }
+
+#home .text-holder h1:hover {
+  transform: translateY(-10%);
+  transition: 0.3s;
+}
+
 #home .text-holder h1 span {
-  font-size: 90px;
+  font-size: 5.62rem;
   color: var(--main-color);
 }
 #home .text-holder h3 {
   font-weight: 300;
 }
+
+#home .text-holder h3:hover {
+  transform: translateY(-10%);
+  transition: 0.3s;);
+}
+
 #home .text-holder h3 span {
-  font-size: 34px;
+  font-size: 2.1rem;
   color: var(--main-color);
 }
 #home .text-holder .button {
@@ -231,8 +246,8 @@ span {
 }
 #home .social-icons a {
   text-decoration: none;
-  width: 35px;
-  height: 35px;
+  width: 2.1rem;
+  height: 2.1rem;
   text-align: center;
   background-color: white;
   border-radius: 50%;
@@ -254,7 +269,8 @@ span {
 #home .social-icons a:hover i {
   color: white;
 }
-#home .scroll-txt {
+
+/* #home .scroll-txt {
   position: absolute;
   left: 5rem;
   bottom: 2rem;
@@ -264,12 +280,12 @@ span {
 #home .scroll-txt a {
   text-decoration: none;
   display: inline-block;
-  font-size: 25px;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: letter-spacing 0.5s ease;
   margin-left: 32rem;
-  height: 15px;
-}
+  height: 1rem;
+} */
 
 #home .scroll-txt a:hover {
   letter-spacing: 2px;
@@ -834,7 +850,7 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
 }
 
 /* Media Queries */
-@media (max-width: 950px) {
+/* @media (max-width: 950px) {
   #navbar .nav-items {
     position: fixed;
     flex-direction: column;
@@ -965,4 +981,4 @@ input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   #portfolio .gallery-filter .filter-item {
     margin-bottom: 10px;
   }
-}
+} */
